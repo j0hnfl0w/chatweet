@@ -9,7 +9,13 @@ const tweet = computed(() => {
 
 <template>
   <div class="flex flex-col w-full">
-    <span @click="router.back()">back</span>
-    <pre>{{ tweet }}</pre>
+    <span class="text-hex-dbdddd" @click="router.back()">back</span>
+    <!-- <pre>{{ tweet }}</pre> -->
+    <News
+      :post="tweet"
+    />
+    <SocialInfo
+      :date="tweet"
+    />
   </div>
 </template>

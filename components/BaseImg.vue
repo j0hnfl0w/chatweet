@@ -5,7 +5,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="flex bg-blue-300">
-    <img :src="props.src" />
+  <div class="flex">
+    <img :src="props.src" class="rounded-8px max-h-400px max-w-500px"/>
   </div>
 </template>
